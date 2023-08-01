@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="descriptionInput">Description:</label>
+      <input type="text" id="descriptionInput" required maxlength="160" />
+      <label for="datetimeInput">Time:</label>
+      <input type="datetime-local" id="datetimeInput" />
+      <button type="submit" id="submitBtn">Submit</button>
+      <select id="sortOrder">
+        <option value="recentlyAdded">Recentley added</option>
+        <option value="deadline">Deadline</option>
+        <option value="recentlyCompleted">Recently Completed</option>
+      </select>
+    </form>
+    <div id="listDiv"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
